@@ -9,7 +9,13 @@ function DateTimeGeneral() {
     generalWidth: "200",
     generalHeight: "200",
     generalBorderRadius: "100",
+    generalBorderColor: "000",
+    generalBorderWidth: "2",
+
     generalDotColor: "black",
+    generalDotWidth: "20",
+    generalDotHeight: "20",
+    generalDotBorderRadius: "10",
 
     arrowMinuteWidth: "4",
     arrowMinuteHeight: "100",

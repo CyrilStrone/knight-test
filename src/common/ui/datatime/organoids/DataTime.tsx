@@ -7,7 +7,13 @@ export interface ISettingDataTime {
     generalWidth: string
     generalHeight: string
     generalBorderRadius: string
+    generalBorderColor: string
+    generalBorderWidth: string
+
     generalDotColor: string
+    generalDotWidth: string
+    generalDotHeight: string
+    generalDotBorderRadius: string
 
     arrowMinuteWidth: string
     arrowMinuteHeight: string
@@ -30,7 +36,7 @@ export const DataTime = (params: IDataTime) => {
             width: `${params.setting.generalWidth}px`,
             height: `${params.setting.generalHeight}px`,
             borderRadius: `${params.setting.generalBorderRadius}px`,
-            border: "2px solid black",
+            border: `${params.setting.generalBorderWidth}px solid #${params.setting.generalBorderColor}`,
             position: "relative",
         },
         arrowMinute: {
@@ -52,9 +58,9 @@ export const DataTime = (params: IDataTime) => {
             transform: `rotate(${secondAngle}deg)`,
         },
         dot: {
-            width: "20px",
-            height: "20px",
-            borderRadius: "10px",
+            width: `${params.setting.generalDotWidth}px`,
+            height: `${params.setting.generalDotHeight}px`,
+            borderRadius: `${params.setting.generalDotBorderRadius}px`,
             position: "absolute",
             backgroundColor: `${params.setting.generalDotColor}`
         }

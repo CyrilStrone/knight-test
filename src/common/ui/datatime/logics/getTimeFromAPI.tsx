@@ -5,7 +5,7 @@ const axiosInstance = axios.create({
 });
 export interface IGetTimeFromAPI {
     key: string
-    zone:string
+    zone: string
 }
 export const getTimeFromAPI = async (params: IGetTimeFromAPI) => {
     return axiosInstance.post(
