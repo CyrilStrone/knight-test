@@ -1,0 +1,34 @@
+.DataTime{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DataTime__General {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DataTime__General__Arrow__Big {
+}
+.DataTime__General__Arrow__Big::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  background: #000;
+}
+.DataTime__General__Arrow__Min {
+}
+.DataTime__General__Arrow__Min::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  background: red;
+}
+.DataTime__Text {
+}
