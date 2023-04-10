@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://api.timezonedb.com/"
+    baseURL: "https://api.timezonedb.com/"
 });
 export interface IGetTimeFromAPI {
     key: string
